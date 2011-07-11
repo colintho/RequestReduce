@@ -49,6 +49,10 @@ padding: 0px;
 list-style: none;
 margin-left: 15px;
 }
+#footer {
+text-align: center;
+padding: 10px;
+}
   </style>
 </head>
 
@@ -60,14 +64,15 @@ margin-left: 15px;
 <ul>
 	<li><a href="http://github.com/downloads/mwrock/RequestReduce/RequestReduce0.9.141.zip">Download</a></li> 
 	<li><a href="http://github.com/mwrock/wiki">Wiki</a></li>
-	<li><a href="http://github.com/mwrock/issues">Issues</a></li> 
+	<li><a href="http://github.com/mwrock/issues">Bugs and Requests</a></li>
+ 
 	<li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li> 
 </ul>
 </div>
     <h1>RequestReduce</h1>
 
     <div class="description">
-      A .Net Library and HttpModule providing automatic CSS background image spriting, merging and minification
+      RequestReduce is a .Net Library and HttpModule providing automatic CSS background image spriting, merging and minification.
     </div>
 
     <p>RequestReduce allows any IIS based website to automaticaly sprite background images into a single PNG as well as combine and minify all CSS in the page's <head/> tag with absolutely no coding beyond a few config tweaks. RequestReduce registers itself as a response filter that will fiter any response of content type text/html. The filter looks for all css links in the &lthead/&gt; tag and replaces them with a single generated url that contains the combined and minified CSS using sprites where it can.</p>
@@ -80,7 +85,7 @@ margin-left: 15px;
 
 <h2>Getting Started</h2>
 <ol>
-<li>1. Download the <a href="http://github.com/mwrock/RequestReduce/downloads">latest RequestReduce version</a></li>
+<li>Download the <a href="http://github.com/downloads/mwrock/RequestReduce/RequestReduce0.9.141.zip">latest RequestReduce version</a></li>
 <li>Extract the contents of the downloaded zip and copy RequestReduce.dll to your website's bin directory</li>
 <li>Add the RequestReduceModule to your web.config or using the IIS GUI</li>
 </ol>
@@ -102,5 +107,6 @@ margin-left: 15px;
   <li>The identity that your asp.net worker process runs under must have write access to your web root directory for creating sprite and css files</li>
 </ul>
  
+<div id="footer">Copyright © 2011 by <a href="http://www.mattwrock.com">Matt Wrock</a></div>
 </body>
 </html>
