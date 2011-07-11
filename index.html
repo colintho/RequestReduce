@@ -93,6 +93,7 @@ margin-left: 15px;
 </code>
 </pre>
 
+<p><b>All background images you want to sprite must have an explicit width in their css class</b>. Otherwise RequestReduce cannot guarantee that the background positions it injects will not cause adjacent sprites to bleed into a background image's view port.</p>
 <h2>Dependencies</h2>
 <ul>
   <li>Thus far, RequestReduce has only been tested using the .Net framework version 4 on IIS 7</li>
